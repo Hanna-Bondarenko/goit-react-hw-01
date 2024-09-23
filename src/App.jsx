@@ -34,18 +34,29 @@
 
 // export default App
 import Profile from './components/Profile/Profile';
-import userData from './userData.json';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
-const App = () => (
-  <div>
-    <Profile
-      name={userData.username}
-      tag={userData.tag}
-      location={userData.location}
-      image={userData.avatar}
-      stats={userData.stats}
-    />
-  </div>
-);
+import userData from './userData.json';
+import friends from './friends.json';
+import transactions from './TransactionHistory.json';
+
+const App = () => {
+  return (
+    <div>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
+    </div>
+  );
+};
 
 export default App;

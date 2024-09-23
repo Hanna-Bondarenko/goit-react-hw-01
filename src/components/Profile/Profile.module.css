@@ -1,8 +1,11 @@
 .profile {
-  border: 1px solid #ccc;
-  padding: 20px;
-  max-width: 400px;
-  margin: auto;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .description {
@@ -10,27 +13,56 @@
 }
 
 .avatar {
-  width: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  background-color: #f4f4f4;
 }
 
 .name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .tag,
 .location {
-  font-size: 18px;
-  color: gray;
+  font-size: 16px;
+  color: #808080;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  background-color: #e4e4e4;
+  border-top: 1px solid #d3d3d3;
 }
 
 .stats li {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 15px 0;
+  border-right: 1px solid #d3d3d3;
+}
+
+.stats li:last-child {
+  border-right: none;
+}
+
+.stats span:first-child {
+  font-size: 14px;
+  color: #808080;
+}
+
+.stats span:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
 }

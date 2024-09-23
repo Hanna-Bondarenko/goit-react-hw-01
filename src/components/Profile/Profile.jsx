@@ -1,6 +1,6 @@
 import styles from './Profile.module.css';
 
-const Profile = ({ name, tag, location, image, stats }) => {
+const Profile = ({ name, tag, location, image, stats }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={image} alt="User avatar" className={styles.avatar} />
@@ -22,7 +22,7 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <span>{stats.likes}</span>
       </li>
     </ul>
-  </div>;
-};
+  </div>
+);
 
 export default Profile;
